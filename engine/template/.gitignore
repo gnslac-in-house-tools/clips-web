@@ -1,0 +1,32 @@
+# Dependencias y builds
+node_modules/
+.remotion/
+dist/
+
+# Secretos: no hay .env en el proyecto (el único vive en 01. Videos); esto es solo una red de seguridad
+.env
+.env.*
+
+
+# Todo lo pesado o generado: nunca a git
+out/
+recordings/
+cache/
+public/generated/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.png
+*.jpg
+!public/brand/**
+
+# Workspace de ejecución del plan
+.superpowers/
+
+# Originales de marca entregados (los procesados viven en public/brand/)
+logos/
+
+# Material de entrada del usuario (guion previo, referencias): no se versiona; lo útil se copia a docs/
+_entrada/

@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/setup-web.sh\" >&2 || true" } ] }
+    ]
+  }
+}
