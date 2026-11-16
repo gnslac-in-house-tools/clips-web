@@ -85,17 +85,17 @@ Luego confirma cada borde con un cuadro suelto (`-ss <t> -frames:v 1`). Para hal
 - Si va a un deck web: el Chromium de Playwright no reproduce H.264; las pruebas automáticas deben usar
   `channel: "chrome"` o `"msedge"`.
 
-## Lecciones (deck de Gensler, oct 2026)
+## Lecciones de casos anteriores
 
-- IZA: el máster no tenía subtítulos y sirvió recortado; se saltó un título casi vacío de 3 s ("Open it anywhere.").
-- MELI: el máster tenía subtítulos quemados; se renderizaron dos escenas con `burnCaptions: false` en una rama.
+- Caso A: el máster no tenía subtítulos y sirvió recortado; se saltó un título casi vacío de 3 s ("Open it anywhere.").
+- Caso B: el máster tenía subtítulos quemados; se renderizaron dos escenas con `burnCaptions: false` en una rama.
   La toma terminaba con un Ctrl+Z que deshacía el arreglo: el tramo se cortó antes.
-- Praktico (toma nueva): en apps que recalculan en vivo, el arrastre es la mejor toma. Pero revisa que la
+- Caso C (toma nueva): en apps que recalculan en vivo, el arrastre es la mejor toma. Pero revisa que la
   consecuencia sea la que quieres contar: crecer una masa curva borró sus locales (m² rentables bajaron);
   se cambió por una masa rectangular que suma locales.
-- Praktico: el vértice de la directriz caía justo sobre el centro de la píldora del muro y se robaba el
+- Caso C: el vértice de la directriz caía justo sobre el centro de la píldora del muro y se robaba el
   arrastre. Agarra el muro un poco corrido a lo largo de él.
-- Praktico: aun calentando el 3D antes de la toma, "Cargando 3D…" salió ~0.8 s; se cortó con dos tramos.
+- Caso C: aun calentando el 3D antes de la toma, "Cargando 3D…" salió ~0.8 s; se cortó con dos tramos.
 - `fps medio ~14` en la grabación es normal: el screencast solo manda cuadros cuando algo cambia. No hizo falta `--headed`.
 - En un deck web, `play()` interrumpido al cambiar rápido de slide lanza `AbortError`: no es una falla del clip.
 

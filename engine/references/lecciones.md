@@ -13,7 +13,7 @@ de diseñar escenas.
 - **Guion visual junto al tablero**: todos los frames con la frase que les toca, «para tener una noción».
   `npm run frames` arma `out/frames/guion-visual.png`; cada frase va al primer frame que la muestra sonando.
 - **La coreografía, después de la voz.** Animar con la voz estimada obliga a rehacer cada entrada cuando llega la
-  real; el boceto y el animatic van estáticos y la animación se hace una vez, con una escena piloto (Coppel, 2026-11).
+  real; el boceto y el animatic van estáticos y la animación se hace una vez, con una escena piloto (video anterior).
 - **No grabes todas las tomas de un jalón.** Grabar varias en 4K y 60 fps con voz estimada y sin piloto aprobado
   se tuvo que frenar y rehacer. Una toma piloto, con voz real.
 - **Tras las tomas: clips sueltos + video integrado, antes de la música.**

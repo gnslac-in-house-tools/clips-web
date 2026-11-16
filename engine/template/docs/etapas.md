@@ -36,7 +36,7 @@ líneas de la bitácora y avisa si `estado.md` quedó más viejo que el trabajo.
 
 **Ubicación** (decídela tú y confírmala con una pregunta de opción múltiple):
 
-1. Si la sesión ya está en una carpeta de proyecto vacía dentro de `01. Videos` (como `01. Videos\Coppel-…`), el
+1. Si la sesión ya está en una carpeta de proyecto vacía dentro de `01. Videos` (como `01. Videos\Cliente-…`), el
    repo va **ahí mismo**.
 2. Si no, en `01. Videos\<App>-Demo-Video`.
 3. OneDrive está bien **solo si la carpeta está anclada en el equipo** («Siempre conservar en este dispositivo»).
@@ -118,7 +118,7 @@ con el guion real.
    motivos propios del cliente en `src/components/<cliente>/` (un mapa, un objeto distinto), y anota la decisión en
    `docs/estado.md`. Solo entonces se construyen las escenas y el tablero (§2).
 
-Ejemplo aprobado: `01. Videos\Coppel-Propossal-video\docs\estilo\index.html` (opción C de esa iteración). Es
+Ejemplo aprobado: `01. Videos\Cliente-Propossal-video\docs\estilo\index.html` (opción C de esa iteración). Es
 referencia de método y de piel, no de contenido: cada video tiene su guion, su objeto y su marca.
 
 ## 2. Tablero y boceto estático (peldaños 2–3)

@@ -77,7 +77,7 @@ decisión final es de oído.
 
 **Emoción:** si el usuario pide «más emotivo», haz una prueba corta A/B (2–3 frases, ~500 caracteres) antes de
 regenerar todo: A = v3 con estabilidad 0 («Creative»: más expresiva y más rápida), B = estabilidad 0.5 con etiquetas
-de emoción de v3 (`[warmly]`, `[excited]`). En el video Coppel ganó A. Si el usuario está en otro dispositivo, manda
+de emoción de v3 (`[warmly]`, `[excited]`). En un video anterior ganó A. Si el usuario está en otro dispositivo, manda
 las muestras con `SendUserFile`: una ruta local no le sirve.
 
 ## 3. Modelos y ajustes
@@ -109,7 +109,7 @@ y que elija de oído.
 - **Una sola toma por frase, siempre** (regla del usuario). El pipeline nunca repite una frase por su cuenta:
   arranque fuerte (primer medio segundo > 2 dB sobre el resto) y final sospechoso solo se **avisan** («óyelo») y
   se revisan de oído en el animatic. Así `voice:plan` cobra exactamente lo que dice. Antes se repetía hasta 4 veces
-  y un guion de 2,340 caracteres gastó ~10,170 (BBVA, 2026-11-12). Regenerar una frase es decisión del usuario,
+  y un guion de 2,340 caracteres gastó ~10,170 (video anterior). Regenerar una frase es decisión del usuario,
   frase por frase, con un sí explícito y su costo dicho.
 - Texto → `toSpoken()` (diccionario de pronunciación) → TTS `with-timestamps` → mp3 + alineación por carácter.
 - **Limpieza por frase** (`pipeline/voiceMaster.ts`, sin API, sin compresión): paso altos 70 Hz → reducción de
@@ -118,7 +118,7 @@ y que elija de oído.
   sus tiempos van al manifest. Si cambias la cadena, sube `MASTER_VERSION`.
 - **Finales secos de `eleven_v3`**: casi ninguna frase trae silencio después de la última letra. La limpieza v3 lo
   detecta (habla hasta el final del archivo) y usa un fade de 30 ms + 250 ms de silencio; antes, el fade de 120 ms
-  se comía la última sílaba y todo «sonaba cortado» (Coppel, 2026-11). Si el final es sospechoso (voz sostenida
+  se comía la última sílaba y todo «sonaba cortado» (video anterior). Si el final es sospechoso (voz sostenida
   hasta el último instante), `voice` y `voice:plan` lo avisan: **óyelo en el animatic antes de gastar**, y solo si se
   oye cortado, y con el sí del usuario, regenera con `npm run voice -- --reintentar-cortadas` (una toma por frase).
 - Para medir ruido y finales: piso en ventanas de 50 ms (percentil 5–10) y nivel de los últimos 100 ms del `.wav`

@@ -20,7 +20,7 @@ explica el porqué, para decidir bien cuando una app nueva pide algo distinto.
 
 ## 0. Piel por defecto: técnico axonométrico
 
-Aprobada por el usuario como default (video Coppel, 2026-11-11), con su portafolio como referencia. Cada video la
+Aprobada por el usuario como default (video anterior, 2026-11-11), con su portafolio como referencia. Cada video la
 viste con **su** marca (colores del cliente, de la app o Gensler; ver `cuestionario.md`, «Ronda de marca»). Ya está
 en la plantilla: `src/components/tecnico/`, `Background`, `ChapterMark`, `VisionBadge`, `src/theme/fonts.ts`.
 
@@ -152,7 +152,7 @@ Los títulos sobre fondo liso se rechazaron ("aburridísimas"); lo que funciona:
 | `swell` | Arranque de la bienvenida | 0.25 |
 | `rise` | Frase del cierre | 0.22 |
 
-En escenas Motion, **casi cada animación lleva su sonido** (pedido del usuario en el video Coppel), con `Cues`
+En escenas Motion, **casi cada animación lleva su sonido** (pedido del usuario en el video anterior), con `Cues`
 (`src/components/Cues.tsx`): una lista `[efecto, segundo, volumen?]` por escena con los mismos tiempos de
 `useWordTime` que la animación. Vocabulario: `tick` 0.14 (etiqueta, check, celda, capa que aterriza) · `pop` 0.16
 (un resultado que aparece: decisión, chip, prioridad) · `whoosh-soft` 0.10 (panel o bloque que entra) · `swell`

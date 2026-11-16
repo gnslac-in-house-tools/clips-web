@@ -34,7 +34,7 @@ export function finalCortado(mp3: string): boolean {
 /**
  * Arranque (dB RMS del primer medio segundo sobre el resto) a partir del cual se avisa «óyelo». SOLO AVISO: la toma
  * nunca se repite en automático. Antes se repetía hasta 4 veces y un guion de 2,340 caracteres gastó ~10,170
- * (BBVA, 2026-11-12). Regla del usuario: una toma por frase; el plan cobra exactamente lo que dice.
+ * (video anterior). Regla del usuario: una toma por frase; el plan cobra exactamente lo que dice.
  */
 const ARRANQUE_MAX_DB = 2;
 

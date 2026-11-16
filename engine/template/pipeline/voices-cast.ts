@@ -27,7 +27,7 @@ async function main() {
   if (arg('--stability')) settings.stability = Number(arg('--stability'));
   const textos = metasInOrder().flatMap((m) => m.segments).map((s) => s.text);
   const largas = [...textos].sort((a, b) => b.split(/\s+/).length - a.split(/\s+/).length).slice(0, 2);
-  // --con "Coppel,BIM": suma la primera frase que contenga cada término dudoso (se oye antes de decidir)
+  // --con "Término1,Término2": suma la primera frase que contenga cada término dudoso (se oye antes de decidir)
   const terminos = (arg('--con') ?? '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
   const dudosas = terminos.map((term) => textos.find((tx) => tx.toLowerCase().includes(term))).filter((tx): tx is string => Boolean(tx) && !largas.includes(tx!));
   const sample = [...dudosas, ...largas].join(' ');
